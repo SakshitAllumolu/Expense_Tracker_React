@@ -80,7 +80,7 @@ const Home = () => {
             </div>
           </center>
         
-      
+      <br />
       <Link to={{ pathname: "/expense", state: { addBalance : addBalance } }} className="show-expenses-link">
         <button className="show-expenses-button">Show Expenses</button>
       </Link>
