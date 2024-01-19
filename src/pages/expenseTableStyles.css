@@ -4,12 +4,12 @@
 }
 
 .expense-table-container {
-    min-height: 100vh;
+    min-height: 85vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-    background-color: #f0f0f0; /* Set the background color to match the home background */
+    background-color: #f0f0f0; 
 }
 
 .expense-table {
@@ -27,15 +27,14 @@
     border: 1px solid #ddd;
 }
 
-/* Styles for the search container */
+
 .search-container {
     display: flex;
     justify-content: space-between;
     margin: 10px;
-    width: 80%; /* Match the width of the expense table */
+    width: 80%; 
 }
 
-/* Styles for the search input fields */
 .search-container input {
     padding: 8px;
     width: 30%;
@@ -50,5 +49,5 @@
     justify-content: center;
     text-align: center;
     padding-bottom: 10px;
-    height: 20px; /* Set a fixed height for the footer */
+    height: 20px; 
 }

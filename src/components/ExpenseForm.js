@@ -19,14 +19,13 @@ const ExpenseForm = ({ addExpense, balance }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Check if the expense amount is greater than the current balance
     const expenseAmount = parseFloat(formData.amount);
     if (expenseAmount > balance) {
       alert('Expense amount exceeds the available balance. Please adjust the amount.');
-      return; // Stop the form submission
+      return; 
     }
 
-    // Proceed with adding the expense if the condition is met
+    
     addExpense(formData);
     setFormData({
       date: '',

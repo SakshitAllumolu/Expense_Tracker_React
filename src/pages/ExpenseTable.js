@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrash } from '@fortawesome/free-solid-svg-icons';
 import './expenseTableStyles.css';
+import "@fontsource/inter"; 
 import Nav from '../components/Nav.js';
 import Footer from '../components/Footer.js';
 
@@ -46,7 +47,7 @@ const ExpenseTable = (props) => {
       updatedExpenses.splice(index, 1);
       setExpenses(updatedExpenses);
 
-      // Update wallet directly within the component
+      
       const currentBalance = localStorage.getItem('balance') || 0;
       const newBalance = parseFloat(currentBalance) + parseFloat(amount);
       localStorage.setItem('balance', newBalance);
@@ -54,7 +55,7 @@ const ExpenseTable = (props) => {
       localStorage.setItem('expenses', JSON.stringify(updatedExpenses));
       alert(`₹${amount} added successfully`);
     } else {
-      // Continue with the original logic if not adding to the wallet
+      
       const updatedExpenses = [...expenses];
       updatedExpenses.splice(index, 1);
       setExpenses(updatedExpenses);

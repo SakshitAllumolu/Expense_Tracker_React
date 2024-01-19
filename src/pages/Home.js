@@ -2,9 +2,10 @@
 
 import React, { useState, useEffect } from 'react';
 import "@fontsource/montserrat";
+import "@fontsource/inter"; 
 import ExpenseForm from '../components/ExpenseForm';
 import { Link } from 'react-router-dom';
-import './Home.css'; // Assuming you have a separate CSS file for Home styles
+import './Home.css'; 
 import Nav from '../components/Nav.js';
 import Footer from '../components/Footer.js';
 

@@ -2,7 +2,7 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Nav.css'; // Create a separate CSS file for Nav styles if needed
+import './Nav.css'; 
 
 const Nav = () => {
   return (
@@ -14,7 +14,7 @@ const Nav = () => {
         <li className="nav-item">
           <Link to="/expense">Expenses</Link>
         </li>
-        {/* Add more navigation links as needed */}
+        
       </ul>
     </nav>
   );
