@@ -1,0 +1,146 @@
+/* Home.css */
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.home-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 100px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.left-column,
+.right-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.left-column {
+    border-right: 1px solid #ccc;
+}
+
+.title {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+    color: #191970;
+}
+
+.wallet-info {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.add-amount {
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.add-balance-button,
+.show-expenses-button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #191970;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.add-balance-button:hover,
+.show-expenses-button:hover {
+    background-color: #0056b3;
+}
+
+.expense-form-container {
+    margin: 20px;
+    padding: 20px;
+    width: max-content;
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #191970;
+}
+
+.expense-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.expenses-section {
+    margin-top: 20px;
+    color: #191970;
+}
+
+.expenses-section h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.expenses-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.expenses-section li {
+    margin-bottom: 5px;
+    font-size: 1.2em;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .left-column,
+    .right-column {
+        flex: 1;
+        border: none;
+        padding: 20px 10px;
+    }
+
+    .left-column {
+        border-bottom: 1px solid #ccc;
+    }
+
+    .expense-form-container {
+        max-width: 100%;
+    }
+}
+
+.footer {
+    background-color: #f0f0f0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 10px;
+    height: 20px; /* Set a fixed height for the footer */
+}
